@@ -5,20 +5,20 @@
 class Agenthound < Formula
   desc "AgentHound — lean field collector for AI agent infrastructure"
   homepage "https://github.com/adithyan-ak/agenthound"
-  version "0.7.0"
+  version "0.8.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.7.0/agenthound_0.7.0_darwin_amd64.tar.gz"
-      sha256 "c545c1b0fef26eb561e9b799f4d8cbc1335976585fe7db0203da4846a75c320f"
+      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.8.0/agenthound_0.8.0_darwin_amd64.tar.gz"
+      sha256 "63936d1faf2473106eb7e40b360b42cf62a94a589148f00379c8bffeba3b5b1b"
 
       define_method(:install) do
         bin.install "agenthound"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.7.0/agenthound_0.7.0_darwin_arm64.tar.gz"
-      sha256 "e89b56fc700750c5272f983c966c7cc8defe1382aa351f22bea8736d2bc05456"
+      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.8.0/agenthound_0.8.0_darwin_arm64.tar.gz"
+      sha256 "f035dc513fce7f4afc14d2cb42738da29ad40ce141949a8f9d1b1cd769e03c01"
 
       define_method(:install) do
         bin.install "agenthound"
@@ -28,15 +28,15 @@ class Agenthound < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.7.0/agenthound_0.7.0_linux_amd64.tar.gz"
-      sha256 "88af73f120f818c926e95d4a4c901d9001b0d5ac7cbcb206761096e0d3eb026e"
+      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.8.0/agenthound_0.8.0_linux_amd64.tar.gz"
+      sha256 "e91253aa257773d17eec6a50459483050cf63f70054888f6348a11e94653e377"
       define_method(:install) do
         bin.install "agenthound"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.7.0/agenthound_0.7.0_linux_arm64.tar.gz"
-      sha256 "2d5b92ebfa5b8f8b511efcde477dd7c33d454abf570a8e784eff951839a756dc"
+      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.8.0/agenthound_0.8.0_linux_arm64.tar.gz"
+      sha256 "42788930d13b828c7044c61d3a5decf68d512103a59d843ae715d954aa16984e"
       define_method(:install) do
         bin.install "agenthound"
       end
