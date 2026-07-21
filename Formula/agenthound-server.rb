@@ -5,20 +5,20 @@
 class AgenthoundServer < Formula
   desc "Single-user Neo4j-backed graph and UI for AgentHound"
   homepage "https://github.com/adithyan-ak/agenthound"
-  version "0.9.0"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.9.0/agenthound-server_0.9.0_darwin_amd64.tar.gz"
-      sha256 "7a6759ffc2e55204f9bab52d9158e2ebcc495acdcf2faaf2fb5d50ea2304853e"
+      url "https://github.com/adithyan-ak/AgentHound/releases/download/v1.0.0/agenthound-server_1.0.0_darwin_amd64.tar.gz"
+      sha256 "a7fbbcd62fd1eae456cc4cbd13bdea9c6854fcc35a485b758d5d529798a2a378"
 
       define_method(:install) do
         bin.install "agenthound-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.9.0/agenthound-server_0.9.0_darwin_arm64.tar.gz"
-      sha256 "893222f66f98cbe10440c27329386ffe06444722531b24106fe154ae8ef88f2a"
+      url "https://github.com/adithyan-ak/AgentHound/releases/download/v1.0.0/agenthound-server_1.0.0_darwin_arm64.tar.gz"
+      sha256 "d34ad7613cb216c169c12a308da99463c5641385e6a4d561fd491d6411260fd5"
 
       define_method(:install) do
         bin.install "agenthound-server"
@@ -28,15 +28,15 @@ class AgenthoundServer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.9.0/agenthound-server_0.9.0_linux_amd64.tar.gz"
-      sha256 "e024130bba3621bda452b3d63be64ee8da73bb4dad06ac0e8cc497c7a6353b6f"
+      url "https://github.com/adithyan-ak/AgentHound/releases/download/v1.0.0/agenthound-server_1.0.0_linux_amd64.tar.gz"
+      sha256 "395034aa4c735ac7fc3f8e57eb27239cbf26311d67b23ec137f2d85491fe9685"
       define_method(:install) do
         bin.install "agenthound-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adithyan-ak/AgentHound/releases/download/v0.9.0/agenthound-server_0.9.0_linux_arm64.tar.gz"
-      sha256 "513c4087c6acbefc129dfb3bce9158b58abe7f39fe0688ea599fda8450581271"
+      url "https://github.com/adithyan-ak/AgentHound/releases/download/v1.0.0/agenthound-server_1.0.0_linux_arm64.tar.gz"
+      sha256 "f5f5baddc6047be82ea39be7b09107c4535a93aec1a5d1e9f20ca7caebe3532f"
       define_method(:install) do
         bin.install "agenthound-server"
       end
