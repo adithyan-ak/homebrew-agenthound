@@ -10,7 +10,7 @@ class AgenthoundServer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/adithyan-ak/AgentHound/releases/download/v1.0.0/agenthound-server_1.0.0_darwin_amd64.tar.gz"
-      sha256 "a7fbbcd62fd1eae456cc4cbd13bdea9c6854fcc35a485b758d5d529798a2a378"
+      sha256 "d8c710663b4e1843f5503226aa37d3cf62eb30828883cfb1b37c75be47eb2f82"
 
       define_method(:install) do
         bin.install "agenthound-server"
@@ -18,7 +18,7 @@ class AgenthoundServer < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/adithyan-ak/AgentHound/releases/download/v1.0.0/agenthound-server_1.0.0_darwin_arm64.tar.gz"
-      sha256 "d34ad7613cb216c169c12a308da99463c5641385e6a4d561fd491d6411260fd5"
+      sha256 "458255bd1c9d988296f9b166c1e7db6f8dc53221425e4395d856664c19e4f708"
 
       define_method(:install) do
         bin.install "agenthound-server"
@@ -29,14 +29,14 @@ class AgenthoundServer < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/adithyan-ak/AgentHound/releases/download/v1.0.0/agenthound-server_1.0.0_linux_amd64.tar.gz"
-      sha256 "395034aa4c735ac7fc3f8e57eb27239cbf26311d67b23ec137f2d85491fe9685"
+      sha256 "8c40fe63fa95403fc48eb913a751e251ef83e26d3252864b5d58b0199982eb11"
       define_method(:install) do
         bin.install "agenthound-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/adithyan-ak/AgentHound/releases/download/v1.0.0/agenthound-server_1.0.0_linux_arm64.tar.gz"
-      sha256 "f5f5baddc6047be82ea39be7b09107c4535a93aec1a5d1e9f20ca7caebe3532f"
+      sha256 "6ce5a3647337713753a296fa620bace03257768dc8e3b9eea2da6327953b05c6"
       define_method(:install) do
         bin.install "agenthound-server"
       end
